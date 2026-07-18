@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini página renderizada</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Mini página renderizada</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">¿Qué ocurre al ingresar una URL?</a></li>
+            <li><a href="pagina2.html">Solicitud HTTP</a></li>
+            <li><a href="pagina3.html">Procesamiento en el Servidor Web</a></li>
+            <li><a href="pagina4.html">Respuesta y Renderizado HTML5</a></li>
+            <li><a href="pagina5.html">Mini página redenrizada</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Conoce más de HTML5</h2>
+            <img src="imagenes/html(1).png" alt="Imagen de HTML" width="250">
+        </section>
+
+        <aside>
+            <h3>Para hacer un buen maquetado sigue los siguientes pasos:</h3>
+            <ol>
+                <li>Revisa la documentación de la W3C</li>
+                <li>Planifica y define los requisitos y objetivos </li>
+                <li>Desarrolla el boceto Wireframe</li>
+                <li>Elige una herramienta para dibujar tus bocetos</li>
+                <li>Define la estructura HTML</li>
+                <li>Busca estilos de acorde al sitio web que vas a desarrollar</li>
+            </ol>
+            <h3>¿Qué es HTML semántico?</h3>
+            <p>Se refiere al uso de elementos HTML5 que transmiten el significado del contenido que encierran. A diferencia de etiquetas genéricas como &lt;div&gt; y &lt;span&gt;, que no indican nada sobre su contenido, etiquetas semánticas como &lt;article&gt;, &lt;section&gt; y &lt;header&gt; proporcionan un contexto más significativo, indicando tanto a los desarrolladores humanos como a los dispositivos (como los motores de búsqueda, navegadores y tecnologías de asistencia) exactamente qué tipo de contenido se encuentra dentro de ellas.</p>
+        </aside>
+
+       <section>
+            <h2>Resumen del proceso HTTP</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paso</th>
+                        <th>Responsable</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Solicitud</td>
+                        <td>Navegador</td>
+                        <td>Envía petición GET/POST al servidor web</td>
+                    </tr>
+                    <tr>
+                        <td>2. Procesamiento</td>
+                        <td>Servidor</td>
+                        <td>Busca y prepara el archivo HTML solicitado</td>
+                    </tr>
+                    <tr>
+                        <td>3. Respuesta</td>
+                        <td>Servidor</td>
+                        <td>Devuelve código 200 OK + archivo HTML</td>
+                    </tr>
+                    <tr>
+                        <td>4. Renderizado</td>
+                        <td>Navegador</td>
+                        <td>Convierte el código en página visual usando DOM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Evalúa el simulador</h2>
+            <form class="mini-form">
+        
+                <label for="aprendizaje">¿Cuánto aprendiste del tema?</label>
+                <input type="text" id="aprendizaje" name="aprendizaje" placeholder="Ej: Mucho, Bastante, Poco...">
+                <label for="calificacion">Califica el simulador del 1 al 5:</label>
+                <input type="text" id="calificacion" name="calificacion" placeholder="Ej: 5">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <span>Tatiana Nayeli Manitio Basurto - 100</span>
+    </footer>
+
+</body>
+</html>

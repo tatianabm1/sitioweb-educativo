@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué ocurre al ingresar una URL?</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>¿Qué ocurre al ingresar una URL?</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">¿Qué ocurre al ingresar una URL?</a></li>
+            <li><a href="pagina2.html">Solicitud HTTP</a></li>
+            <li><a href="pagina3.html">Procesamiento en el Servidor Web</a></li>
+            <li><a href="pagina4.html">Respuesta y Renderizado HTML5</a></li>
+            <li><a href="pagina5.html">Mini página renderizada</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>¿Qué es una URL?</h2>
+            <p>Una URL, abreviatura de localizador uniforme de recursos, es una dirección web que apunta a un sitio web específico, una página web o un documento en Internet.</p>
+             <img src="imagenes/internet.jpg" alt="imagen de HTTP" width="450">
+            <h2>Pasos de lo que ocurre cuando ingresas una URL en el navegador:</h2>
+            <p>Paso 1: El usuario escribe una URL (https://www.microsoft.com/) en el navegador y le da a Enter. Lo primero que hay que hacer es traducir la URL a una dirección IP. El mapeo usualmente se guarda en una caché, así que el navegador busca la dirección IP en varias capas de caché: la caché del navegador, la caché del sistema operativo, la caché local y la caché del proveedor de internet (ISP). Si el navegador no encuentra el mapeo en la caché, le pide al resolvedor de DNS (Sistema de Nombres de Dominio) que lo resuelva.</p>
+            <p>Paso 2: Si la dirección IP no se encuentra en ninguna de las cachés, el navegador va a los servidores DNS para hacer una búsqueda recursiva de DNS hasta que se encuentra la dirección IP</p>
+            <p>Paso 3: Ahora que tenemos la dirección IP del servidor, el navegador envía una solicitud HTTP al servidor. Para un acceso seguro a los recursos del servidor, siempre debemos usar HTTPS. Primero establece una conexión TCP con el servidor a través del handshake de 3 vías TCP. Luego envía la clave pública al cliente. El cliente usa la clave pública para encriptar la clave de sesión y la envía al servidor. El servidor usa la clave privada para desencriptar la clave de sesión. El cliente y el servidor ahora pueden intercambiar datos encriptados usando la clave de sesión.</p>
+            <p>Paso 4: El servidor procesa la solicitud y devuelve la respuesta. Para una respuesta exitosa, el código de estado es 200. Hay 3 partes en la respuesta: HTML, CSS y Javascript. El navegador analiza HTML y genera el árbol DOM. También analiza CSS y genera el árbol CSSOM. Luego combina el árbol DOM y el árbol CSSOM para renderizar el árbol. El navegador renderiza el contenido y lo muestra al usuario</p>
+            <br>
+        </section>
+    </main>
+
+    <footer>
+        <span>Tatiana Nayeli Manitio Basurto - 100</span>
+    </footer>
+</body>
+</html>

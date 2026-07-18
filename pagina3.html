@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesamiento en el servidor web</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Procesamiento en el Servidor Web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">¿Qué ocurre al ingresar una URL?</a></li>
+            <li><a href="pagina2.html">Solicitud HTTP</a></li>
+            <li><a href="pagina3.html">Procesamiento en el servidor web</a></li>
+            <li><a href="pagina4.html">Respuesta y Renderizado HTML5</a></li>
+            <li><a href="pagina5.html">Mini página renderizada</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>¿Cómo funciona la comunicación?</h2>
+            <p>Cuando un navegador necesita un archivo que está almacenado en un servidor web, el navegador requerirá el archivo al servidor mediante el protocolo HTTP. Cuando la petición alcanza al servidor web correcto (hardware), el servidor HTTP (software) acepta la solicitud, encuentra el documento requerido y lo envía de regreso al navegador, tambien a través de HTTP. (Si el servidor no encuentra el documento requerido, devuelve una respuesta 404 en su lugar.)</p>
+            <img src="imagenes/clienteservidor.jpg" alt="Flujo cliente servidor" width="470" height="350">
+        </section>
+        <section>
+            <h3>Ejemplo de un encabezado HTTP de respuesta</h3>
+            <pre>
+                HTTP/1.1 200 OK
+                Content-Type: text/html; charset=utf-8
+                Content-Length: 9593
+                Server: gunicorn/19.9.0
+                Date: Sun, 31 May 2026 02:57:48 GMT
+            </pre>
+        </section>
+        <aside>
+            <h3>Documentación que te puede servir</h3>
+            <ul>
+                <li><a href="https://www.ibm.com/docs/es/netcoolomnibus/8.1.0?topic=interface-http-request-response-examples" target="_blank">IBM</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <span>Tatiana Nayeli Manitio Basurto - 100</span>
+    </footer>
+
+</body>
+</html>
